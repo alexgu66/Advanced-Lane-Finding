@@ -26,7 +26,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![Undist](.\Output\Undist.png)
+![Undist](/Output/Undist.png)
 
 
 
@@ -35,13 +35,13 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 #### 1. Provide an example of a distortion-corrected image.
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-![Undist_test1](.\Output\Undist_test1.png)
+![Undist_test1](/Output/Undist_test1.png)
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
 I used a combination of color and gradient thresholds to generate a binary image at cell 22.  Here's an example of my output for this step.   I tried the different combinations mentioned in the lesson and the S/gradient combination shows the best result, which is normal since the saturation of color keeps at same level even in shadow area.
 
-![threshold_image](.\Output\threshold_image.png)                 
+![threshold_image](/Output/threshold_image.png)                 
 
 
 
@@ -49,7 +49,7 @@ I used a combination of color and gradient thresholds to generate a binary image
 
 The code for my perspective transform is at cell 23.  Following is a sample. I verified that my perspective transform was working as expected by verifying that the lines appear parallel in the warped image.
 
-![warp1](.\Output\warp1.png)
+![warp1](/Output/warp1.png)
 
 I chose to hardcode the source and destination points in the following manner:
 
@@ -73,7 +73,7 @@ This resulted in the following source and destination points:
 
 Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
 
-![fit](.\Output\fit.png)
+![fit](/Output/fit.png)
 
 The code is in cell 24 and 25. The FindNextPolynomial() in cell 25 searches the fit by polynomial identified in previous frame.
 
@@ -89,7 +89,7 @@ In code cell 24 and 25, the car offset (car_offset) is also calculated and conve
 
 The function called WarpBack() in cell 27 also has this functionality, plus filling the identified lane area with green. Following is a sample.
 
-![warp2](.\Output\warp2.png)
+![warp2](/Output/warp2.png)
 
 
 
@@ -109,7 +109,7 @@ Here's a [link to my video result](./projecproject_video_all.mp4), the project_v
 
 I met an issue that the polynomial identified changes dramatically as following,
 
-![wrong_fit](.\Output\wrong_fit.png)
+![wrong_fit](/Output/wrong_fit.png)
 
 
 
