@@ -99,7 +99,7 @@ The function called WarpBack() in cell 27 also has this functionality, plus fill
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./projecproject_video_all.mp4), the project_video_all.mp4 has the lane line identified as green. The annotation of curvature and car offset are also added to the video.
+Here's a [link to my video result](/project_video_all.mp4), the project_video_all.mp4 has the lane line identified as green. The annotation of curvature and car offset are also added to the video.
 
 ---
 
